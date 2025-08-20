@@ -1,4 +1,6 @@
-## This query finds the bike with the highest total usage time and identifies the station where it is most often used, helping the company highlight it in their marketing.
+/*This query finds the bike with the highest total usage time and identifies 
+the station where it is most often used,helping the company highlight 
+it in their marketing.*/ 
 WITH longest_used_bike AS 
 ( 
  SELECT bike_id, SUM(duration_minutes) AS trip_duration 
